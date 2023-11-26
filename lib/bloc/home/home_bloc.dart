@@ -6,7 +6,6 @@ class HomeBloc extends Bloc<AbstractHomeEvent, AbstractHomeState> {
   HomeBloc() : super(HomeInitialState()) {
     on<HomeEvent>(
       (event, emit) {
-        print("test");
         emit(HomeToDetailsState());
       },
     );

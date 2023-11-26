@@ -1,13 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:uitraining/bloc/home/home_event.dart';
 import 'package:uitraining/bloc/home/home_bloc.dart';
 import 'package:uitraining/bloc/home/home_state.dart';
 import 'package:uitraining/models/user.dart';
-import 'package:uitraining/services/postgres_provider.dart';
 import 'package:uitraining/services/user_service.dart';
-import 'package:uitraining/views/details.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -52,9 +48,7 @@ class _HomeState extends State<Home> {
         },
       ),
       bottomNavigationBar: BottomNavigationBar(
-        onTap: (idx) {
-          print(idx);
-        },
+        onTap: (idx) {},
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.ac_unit),
